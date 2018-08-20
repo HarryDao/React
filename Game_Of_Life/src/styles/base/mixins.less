@@ -1,0 +1,32 @@
+
+.text_large {
+    font-size: 30px;
+    line-height: 35px;
+}
+.text_medium {
+    font-size: 25px;
+    line-height: 30px;
+}
+.text_regular {
+    font-size: 20px;
+    line-height: 25px;
+}
+.text_small {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.button_default_format {
+    .text_regular;
+    padding: @gap_small @gap_tiny;
+    margin: 0;
+    outline: none;
+    color: @white;
+    background-color: @grey_darker;
+    border: 1px solid @white;
+    border-radius: @gap_tiny;
+    &:hover {
+        cursor: pointer;
+        font-size: @font_medium;
+    }
+}

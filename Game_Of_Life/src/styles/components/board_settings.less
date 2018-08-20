@@ -1,0 +1,54 @@
+div.board-settings {
+    width: 50%;
+    margin: 0 auto;
+    background-color: @grey_dark;
+    border-radius: 0 0 @gap_large @gap_large;
+    padding: @gap_small;
+
+    > table {
+        width: 100%;
+
+        > tbody {
+
+            > tr {
+
+                > td {
+                    color: @white;
+                    width: 25%;
+                    padding: @gap_tiny;
+
+                    &.name {
+                        text-align: center;
+                        .text_regular;
+                        line-height: @font_regular;
+                        color: @white_dark;
+                    }
+
+                    &.option {
+                        padding: @gap_small;
+                        
+                        > button {
+                            .button_default_format;
+                            width: 100%;
+                            font-size: @font_smaller;
+                            padding: @gap_small;
+                            color: @white_dark;
+                            border-color: transparent;
+                            &:hover {
+                                font-size: @font_small;
+                            }
+                            &:hover {
+                                color: @white;
+                            }
+                            &.active{
+                                color: @white;
+                                border-color: @white;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+div.board-controller {
+    width: 50%;
+    margin: auto;
+    background-color: @grey_dark;
+    border-radius: @gap_large @gap_large 0 0;
+    padding: @gap_small;
+    
+    > .buttons {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        > button {
+            .button_default_format;
+            width: 33%;
+            margin: @gap_smaller @gap_tiny;
+            color: @white_dark;
+            border-color: transparent;
+            &:hover {
+                color: @white;
+            }
+            &.highlighted {
+                color: @white;
+                border-color: @white;
+            }
+        }
+    }
+
+    > .steps {
+        display: flex;
+        color: @white_dark;
+        text-align: center;
+        .text_small;
+        padding-top: @gap_small;
+        * {
+            vertical-align: top;
+        }
+        > .total, .current  {
+            width: 25%;
+            margin: 0;
+            padding: 0;
+            > span {
+                color: @white;
+            }
+        }
+        > .goto {
+            width: 50%;
+            > input {
+                margin-left: @gap_smaller;
+                width: 30%;
+                border-radius: @gap_tiny;
+                outline: none;
+                background-color: @black;
+                border: 1px solid transparent;
+                padding: @gap_tiny;
+                color: @white;
+                &:focus{
+                    border-color: @white;
+                }
+            }
+        }
+    }
+}

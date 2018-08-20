@@ -1,0 +1,38 @@
+div.board-main {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    * {
+        transition: @t_speed_fast;
+    }
+    > .inner {
+        border: @gap_regular solid @grey_dark;
+        border-radius: @gap_regular;
+        display: inline-block;
+        margin: 0;
+        vertical-align: top;
+        > table {
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            > tbody {
+                > tr {
+                    > td {
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid @grey_dark;
+                        background-color: @black;
+                        &.active {
+                            background-color: @red;
+                            &.new {
+                                background-color: @red_lighter;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
